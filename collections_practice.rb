@@ -37,10 +37,11 @@ def sum_array(array)
 end
 
 def add_s (array)
-  array.each_with_index.collect {|element,index|
-    if element != "feet"
-    "#{element} + 's'"
-else 
-  "#{element}"
-}
+   array.collect do |word|
+   if array[1] == "feet"
+    "feet"
+  else
+    word + "s"
+  end
+ end  
 end
