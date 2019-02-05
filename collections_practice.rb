@@ -43,5 +43,5 @@ def add_s (array)
   else
     word + "s"
   end
- end  
+ end
 end
